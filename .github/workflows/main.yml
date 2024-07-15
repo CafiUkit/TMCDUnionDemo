@@ -8,7 +8,7 @@ on:
     tags:
     - 'v*'
     branches: 
-      - main
+      - master
   schedule:
     - cron: "3 */6 * * 0-6"
     - cron: "59 */6 * * 0-6"
@@ -58,4 +58,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+        branch: master
